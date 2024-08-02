@@ -1,0 +1,468 @@
+body {
+    background-color: #F3F5FC;
+    height: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    padding: 10px;
+  }
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.outputSection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    resize: none;
+    width: 400px;
+    right: 80px;
+    height: 600px;
+    top: 40px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 0.08);
+    color: #0A3871;
+    border-style: none;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.inputBox {
+    position: absolute;
+    resize: none;
+    width: 577px;
+    min-height: 48px;
+    top: 100px;
+    left: 240px;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border-style: none;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    overflow: auto;
+}
+
+.outputBox {
+    position: relative;
+    resize: none;
+    width: 336px;
+    height: 500px;
+    top: 32px;
+    left: 32px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border-style: none;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.warningdiv{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+img{
+    margin-right: 10px;
+}
+
+.warning {
+    position: absolute;
+    width: 30%;
+    height: 18px;
+    bottom: 140px;
+    opacity: 80%;
+    left: 240px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.buttonFrame {
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    bottom: 40px;
+    gap: 24px;
+    display: flex;
+}
+
+.encryptButton {
+    width: 328px;
+    height: 67px;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    border-style: none;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    gap: 8px;
+}
+
+.decryptButton {
+    width: 328px;
+    height: 67px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-width: 1px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    gap: 8px;
+}
+
+.copyButton {
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border-style: solid;
+    border-color: #0A3871;
+    border-width: 1px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    gap: 8px;
+}
+
+.logoalura {
+    size: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.notfound{
+    size: 50%;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 10px;
+}
+
+.nomsgdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 32px;
+    top: 70px;
+}
+
+.nomsgtitle{
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.nomsgsubtitle{
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+/*
+@media (max-width: 800px){
+    html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 80%;
+        margin: 10%;
+        padding: 0;
+    }
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inputSection {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .outputSection {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        resize: none;
+        width: 95%;
+        left: 20px;
+        right: 20px;
+        top: 250px;
+        height: 600px;
+        border-radius: 32px;
+        background-color: #ffffff;
+        box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 0.08);
+        color: #0A3871;
+        border-style: none;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .inputBox {
+        position: relative;
+        resize: none;
+        width: 95%;
+        min-height: 48px;
+        top: 140px;
+        left: 20px;
+        background-color: #F3F5FC;
+        color: #0A3871;
+        border-style: none;
+        font-family: "Inter";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+        overflow: auto;
+    }
+    
+    .outputBox {
+        position: relative;
+        resize: none;
+        width: 336px;
+        height: 550px;
+        left: 32px;
+        border-radius: 32px;
+        background-color: #FFFFFF;
+        color: #0A3871;
+        border-style: none;
+        font-family: "Inter";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .encryptButton {
+        width: 40%;
+        height: 67px;
+        background-color: #0A3871;
+        color: #F3F5FC;
+        border-style: none;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        border-radius: 24px;
+        padding: 24px;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .decryptButton {
+        width: 40%;
+        height: 67px;
+        background-color: #D8DFE8;
+        color: #0A3871;
+        border-style: solid;
+        border-color: #0A3871;
+        border-width: 1px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        border-radius: 24px;
+        padding: 24px;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .copyButton {
+        position: absolute;
+        width: 336px;
+        height: 67px;
+        left: 32px;
+        background-color: #FFFFFF;
+        color: #0A3871;
+        border-style: solid;
+        border-color: #0A3871;
+        border-width: 1px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        border-radius: 24px;
+        padding: 24px;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .logoalura {
+        size: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        left: 42.5%;
+        top: 50px;
+    }
+
+    .notfound{
+        size: 50%;
+        width: 336px;
+        height: 304px;
+        left: 32px;
+        top: 10px;
+    }
+
+    .nomsgdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 30px;
+
+        position: absolute;
+        width: 336px;
+        height: 122px;
+        left: 27.5%;
+        top: 70px;
+    }
+
+    .nomsgtitle{
+        width: 336px;
+        height: 58px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .nomsgsubtitle{
+        width: 336px;
+        height: 48px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .warningdiv{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    img{
+        margin-right: 10px;
+    }
+    
+    .warning {
+        position: absolute;
+        width: 30%;
+        height: 18px;
+        bottom: 140px;
+        opacity: 80%;
+        left: 240px;
+        font-family: "Inter";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    .buttonFrame {
+        display: flex;
+        position: fixed;
+        width: 500px;
+        top: 360px;
+        left: 50%;
+        gap: 10%;
+        transform: translate(-50%, 0);
+    }
+} 
+    */
